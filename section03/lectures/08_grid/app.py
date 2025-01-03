@@ -1,6 +1,11 @@
 import tkinter as tk
 from tkinter import ttk
 
+def greet():
+    # The get() method is used to fetch the value of a StringVar() instance.
+    # If user_name is empty, print Hello, World!
+    print(f"Hello, {user_name.get() or 'World'}!")
+
 root = tk.Tk()
 root.title("Greeter")
 
